@@ -1,7 +1,7 @@
-# Wizard Duel
+# Main Duel
 
 * For this activity your goal is to create an application that can create Wizards and have them duel.
-* The Wizard class should have:
+* The Main class should have:
   - 3 Instance Fields: name, health, magicPower, luck.
   - your constructor should have a parameter for: name, magicPower.
   - health should be set to 100 as a default and luck should be set as a random number from 1-7 everytime a spell is cast. You might want to build a method that generates the random number for luck and sets its value.
