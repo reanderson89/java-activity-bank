@@ -11,9 +11,16 @@ public class FizzBuzz {
         }
         return intArray;
     }
+//    your method needs to return all of the altered values from the incoming ArrayList in String format
+    public static void fizzBuzz(ArrayList<Integer> testArray){
+        System.out.println(testArray);
+    }
 
     public static void main(String[] args) {
-
+        ArrayList<Integer> testArray = fizzBuzzTest(30);
+        fizzBuzz(testArray);
+//        once your fizzbuzz() method returns something, uncomment the line below and run your application.
+//        System.out.println(fizzBuzz(testArray));
     }
 
 }
