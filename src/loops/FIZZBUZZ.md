@@ -1,6 +1,6 @@
 # FizzBuzz coding challenge
 
-* Given an integer n, return a string array answer (1-indexed) where:
+* Given an array of integers, swap the values based on the given conditions:
 
 - answer[i] == "FizzBuzz" if "i" is divisible by 3 and 5.
 - answer[i] == "Fizz" if "i" is divisible by 3.
@@ -9,15 +9,15 @@
   
 
 * Example 1:
-`Input: n = 3
+`Input: [1,2,3]
 Output: ["1","2","Fizz"]`
 
 * Example 2:
-`Input: n = 5
+`Input: [1,2,3,4,5]
 Output: ["1","2","Fizz","4","Buzz"]`
 
 * Example 3:
-`Input: n = 15
+`Input: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]`
 
 * You are given a method that creates an array of random integers from 1-100. Your fizzBuzz method is being called and is using the output of the fizzBuzzTest method for the argument. 
