@@ -3,7 +3,7 @@
 * For this activity you are tasked to build out the GroceryStore class and the Customer class. Eventually we will have a Customer "enter" the GroceryStore. (We will create an instance of a Customer in the GroceryStore class).
 Once the Customer is in the store they will proceed to add items to their cart. When they have all the items they need, they will check out at the register and leave with their goods.
 
-* This is good practice for creating classes and having them interact but also think about if the information you are creating should be public, private, or protected depending on who is accessing it.
+* This is good practice for creating classes and having them interact. Also decide wether the information you are creating should be public, private, or protected depending on who is accessing it.
 
 * The GroceryStore should have some defining properties as well, for example:
   - inventoryOfSomeProduct (required) (Make at least 4 properties like this so the store has things to sell).
