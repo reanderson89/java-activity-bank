@@ -17,7 +17,7 @@ public interface Animal {
 
 //    This is a default method that we can pass to all classes that implement this interface
     default double convertWeightToKgs(double weightInLbs){
-        return weightInLbs*2.2;
+        return weightInLbs/2.2;
     }
 
 }
