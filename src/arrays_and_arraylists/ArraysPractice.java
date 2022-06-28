@@ -12,6 +12,6 @@ public class ArraysPractice {
 //        print the length of the array
 
 //        change a few values in each array and then print both arrays to the terminal again
-
+        System.out.println("Hello World");
     }
 }

@@ -2,7 +2,7 @@ package arrays_and_arraylists;
 
 public class ArrayListsPractice {
     public static void main(String[] args) {
-//        Create an ArrayList with 5 elements
+//        Create an ArrayList
 //        add 5 elements to it
 //        print the entire ArrayList to the terminal
 //        print the length of it
@@ -18,7 +18,7 @@ public class ArrayListsPractice {
 //        }
 //        print out whatever you need to the terminal to check and see if the methods work the way you think they should.
 
-
+        System.out.println("Print something from arraylists practice");
 
 
     }
