@@ -19,7 +19,9 @@ public class Student
 
     public void enrollToCourse( Course course )
     {
-        //TODO implement this method
+        if(!isAttendingCourse(course.getCode()) && isCourseApproved(course.getCode())){
+            registerApprovedCourse(course);
+        }
     }
 
     public void registerApprovedCourse( Course course )
@@ -29,20 +31,29 @@ public class Student
 
     public boolean isCourseApproved( String courseCode )
     {
-        //TODO implement this method
-        return false;
+//        this could need to check the course.getModule() and then check the module for pre-reqs. Though they don't exist now, they could exist at some point.
+        for (Course course: courses) {
+            if(course.getModule().getPrerequisites().containsKey(courseCode)){
+                return true;
+            }
+        }
+//        Since the prerequisites portion of the project has not yet been completed, we are returning true by default here. When the prerequisites actually get added into the project, please change the below return statement to return "false" instead, for this method to work accurately.
+        return true;
     }
 
     // CHALLENGE IMPLEMENTATION: Read README.md to find instructions on how to solve. 
-    public List<Course> findPassedCourses( Course course )
-    {
-        //TODO implement this method
-        return null;
-    }
+//    public List<Course> findPassedCourses( Course course )
+//    {
+//        return null;
+//    }
 
     public boolean isAttendingCourse( String courseCode )
     {
-        //TODO implement this method
+        for (Course course: courses) {
+            if(course.getCode().equals(courseCode)){
+                return true;
+            }
+        }
         return false;
     }
 
@@ -55,8 +66,9 @@ public class Student
     @Override
     public List<Course> getApprovedCourses()
     {
-        //TODO implement this method
-        return null;
+        List<Course> ListofApprovedCourses = new ArrayList(approvedCourses.values());
+
+        return ListofApprovedCourses;
     }
 
     @Override

@@ -15,6 +15,7 @@ public class CourseService
 {
     private final Map<String, Course> courses = new HashMap<>();
 
+
     private final Map<String, List<Student>> enrolledStudents = new HashMap<>();
 
     public CourseService()
@@ -63,6 +64,7 @@ public class CourseService
             enrolledStudents.put( courseId, new ArrayList<>() );
         }
         enrolledStudents.get( courseId ).add( student );
+
     }
 
     public void showEnrolledStudents( String courseId )

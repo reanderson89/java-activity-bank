@@ -13,7 +13,12 @@ public class StudentService
 
     public void subscribeStudent( Student student )
     {
-        students.put( student.getId(), student );
+        if(isSubscribed(student.getId())){
+            System.out.println("A student with that ID already exists");
+        } else {
+            students.put( student.getId(), student );
+
+        }
     }
 
     public Student findStudent( String studentId )
@@ -27,13 +32,19 @@ public class StudentService
 
     public boolean isSubscribed( String studentId )
     {
-        //TODO implement this method
-        return false;
+        return students.containsKey(studentId);
     }
 
     public void showSummary()
     {
-        //TODO implement
+        System.out.println("Current Students: ");
+        for (String key : students.keySet()){
+            Student student = students.get(key);
+            System.out.println(student);
+            System.out.println("Current courses this student is taking: ");
+            student.getApprovedCourses().forEach(course -> System.out.println(course.toString()));
+            System.out.println(" ");
+        }
     }
 
     public void enrollToCourse( String studentId, Course course )
